@@ -1,13 +1,7 @@
-# app.py
+
 import streamlit as st
-import numpy as np
 import pickle
 import pandas as pd
-
-
-from streamlit_lottie import st_lottie
-import requests
-
 
 # Load model
 with open('model.pkl', 'rb') as file:
