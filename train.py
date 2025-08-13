@@ -10,7 +10,7 @@ data=pd.DataFrame(data)
 
 #Encoding the data
 
-Encoder=LabelEncoder()
+Encoder=OneHotEncoder()
 data['Stage_fear']=Encoder.fit_transform(data['Stage_fear'])
 data['Drained_after_socializing']=Encoder.fit_transform(data['Drained_after_socializing'])
 data['Personality']=Encoder.fit_transform(data['Personality'])
